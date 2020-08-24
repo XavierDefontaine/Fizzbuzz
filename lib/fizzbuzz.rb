@@ -1,15 +1,13 @@
 def fizzbuzz(number)
-(1..number).each {|int|
-  if int % 15 == 0
-    puts 'fizzbuzz'
-  elsif int % 3 == 0
-    puts 'fizz'
-  elsif int % 5 == 0 
-    puts 'buzz'
-  else
-      puts int
-  end
-}
-end
 
-fizzbuzz(15)
+  if number % 3 == 0 && number % 5 == 0
+    return 'fizzbuzz'
+  elsif number % 3 == 0
+    return 'fizz'
+  elsif number % 5 == 0 
+    return 'buzz'
+  else
+    return number
+  end
+
+end
